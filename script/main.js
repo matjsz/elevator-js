@@ -9,6 +9,7 @@ function report(source, message){
 
 function off(){
     var buttons = document.getElementsByClassName("floor-button");
+    report("System", "Offline")
     for(let i=0; i < buttons.length; i++){
         buttons[i].onclick = function(){
             report("Elevator", "System is off, i can't do this now");
@@ -17,6 +18,7 @@ function off(){
 }
 
 function on(){
+    report("System", "Online")
     var buttons = document.getElementsByClassName("floor-button");
     for(let i=0; i <= buttons.length; i++){
         buttons[i].onclick = function(){
