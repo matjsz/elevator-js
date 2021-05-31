@@ -1,0 +1,23 @@
+body{
+    background: black !important;
+}
+
+h1{
+    color: white;
+}
+
+canvas{
+    border:1px solid #000000;
+    background-color: white;
+}
+
+#inside{
+    margin-left: 20px !important;
+}
+
+#codeBlock{
+    max-height: 200px !important;
+    margin-left: 10px;
+    margin-top: 20px;
+}
+

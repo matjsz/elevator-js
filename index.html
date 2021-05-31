@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elevator</title>
+
+    <link rel="stylesheet" href="style/main.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+</head>
+<body class="text-light" onload="startSystem()">
+    <div class="container row">
+        <div class="col container">
+            <h1 style="margin-top: 2rem; margin-bottom: 2rem;">Elevator System</h1>
+            <canvas id="building" width="800" height="500">
+            </canvas>
+        </div>
+        <div class="col container" style="padding-top: 120px; padding-left: 80px;">
+            <p>Selecione um andar</p>
+            <div class="row" style="padding-bottom: 10px;">
+                <div class="col col-3"><button onclick="changeFloor(1);" class="btn btn-primary floor-button">1</button></div>
+                <div class="col col-3"><button onclick="changeFloor(2);" class="btn btn-primary floor-button">2</button></div>
+                <div class="col col-3"><button onclick="changeFloor(3);" class="btn btn-primary floor-button">3</button></div>
+            </div>
+            <div class="row" style="padding-bottom: 10px;">
+                <div class="col col-3"><button onclick="changeFloor(4);" class="btn btn-primary floor-button">4</button></div>
+                <div class="col col-3"><button onclick="changeFloor(5);" class="btn btn-primary floor-button">5</button></div>
+                <div class="col col-3"><button onclick="changeFloor(6);" class="btn btn-primary floor-button">6</button></div>
+            </div>
+            <div class="row" style="padding-bottom: 10px;">
+                <div class="col col-3"><button onclick="changeFloor(7);" class="btn btn-primary floor-button">7</button></div>
+                <div class="col col-3"><button onclick="changeFloor(8);" class="btn btn-primary floor-button">8</button></div>
+                <div class="col col-3"><button onclick="changeFloor(9);" class="btn btn-primary floor-button">9</button></div>
+            </div>
+
+            <p style="margin-top: 50px">Área do operador</p>
+            <div class="row" style="padding-bottom: 10px;">
+                <div class="col col-4"><button onclick="on();" class="btn btn-primary">ON</button></div>
+                <div class="col col-4"><button onclick="off();" class="btn btn-primary">OFF</button></div>
+            </div>
+        </div>
+        <pre id="codeBlock" class="pre-scrollable bg-secondary text-white rounded">
+            <code class="text-left" id="inside">
+                <samp><p>> Bem vindo ao sistema do elevador!</p></samp>
+            </code>
+        </pre>
+    </div>
+
+
+    <script src="script/main.js"></script>
+</body>
+</html>
